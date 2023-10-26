@@ -16,3 +16,10 @@ UPDATE animals SET species = 'unspecified';
 SELECT * FROM animals; -- Verify that the change was made
 ROLLBACK;
 SELECT * FROM animals; -- Verify that the species column went back to the state before the transaction
+
+BEGIN;
+UPDATE animals SET species = 'digimon' WHERE name LIKE '%mon';
+UPDATE animals SET species = 'pokemon' WHERE species IS NULL;
+SELECT * FROM animals; -- Verify that the changes were made
+COMMIT;
+SELECT * FROM animals; -- Verify that the changes persist after commit
