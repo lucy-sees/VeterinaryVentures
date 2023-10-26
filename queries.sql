@@ -10,3 +10,9 @@ SELECT * FROM animals WHERE name <> 'Gabumon';
 -- or
 -- SELECT * FROM animals WHERE NOT name = 'Gabumon';
 SELECT * FROM animals WHERE weight_kg BETWEEN 10.4 AND 17.3;
+
+BEGIN;
+UPDATE animals SET species = 'unspecified';
+SELECT * FROM animals; -- Verify that the change was made
+ROLLBACK;
+SELECT * FROM animals; -- Verify that the species column went back to the state before the transaction
