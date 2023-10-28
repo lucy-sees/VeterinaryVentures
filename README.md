@@ -144,6 +144,6 @@ If you like this project, please consider giving it a star.
 
 ## 📝 License <a name="license"></a>
 
-This project is [MIT](./LICENSE/MIT.md) licensed.
+This project is [MIT](https://github.com/lucy-sees/VeterinaryVentures/blob/b69b1e5aa3a6d1f3bd8c487d5325567a88badce2/LICENSE) licensed.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
