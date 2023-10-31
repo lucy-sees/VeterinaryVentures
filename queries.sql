@@ -187,3 +187,6 @@ ON VI.vet_id= VE.id
 WHERE VE.name = 'Maisy Smith'
 GROUP BY S.name
 ORDER BY COUNT(*) DESC LIMIT 1;
+
+-- Add an email column to your owners table
+ALTER TABLE owners ADD COLUMN email VARCHAR(120);
